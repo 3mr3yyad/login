@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signup</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/all.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/media.css">
+    <script src="../js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <section class="container my-5 text-center">
+        <div class="m-auto w-75 p-5 shdowbox">
+            <h1 class="text-info">Smart Login System</h1>
+            <input type="text" class="form-control my-3 empty" placeholder="Enter your name" id="userName" oninput="validName()">
+            <input type="text" class="form-control my-3 empty" placeholder="Enter your email" id="signUpEmail" oninput="validEmail()">
+            <p id="emailExists" class="d-none text-danger">this email already exists</p>
+            
+            <input type="password" class="form-control my-3 empty" placeholder="Enter a password" id="signUpPass" oninput="validPass()">
+            
+            <p id="signUpAlert" class="d-none text-danger">All inputs is required
+                <br>
+                hint: password should be more than 8 digits and contain at least one number and one special character
+            </p>
+            <p id="success" class="d-none text-success empty">Success, Now you can Signin</p>
+            <button onclick="addUser()" class="btn btn-outline-info w-100 my-3">Sign Up</button>
+            <p class="text-white">You have an account? <a class="text-white links" href="../index.html">Signin</a></p>
+        </div>
+    </section>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

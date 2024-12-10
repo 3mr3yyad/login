@@ -1,0 +1,25 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #24353f;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.links{
+    text-decoration: none;
+}
+
+.links:hover{
+    text-decoration: underline;
+}
+
+.btn-outline-warning{
+    border: solid 1px #ffc107;
+}
+
+.shdowbox{
+    box-shadow: -5px 2px 54px -9px rgba(0, 0, 0, 1);
+}
